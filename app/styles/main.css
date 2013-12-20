@@ -1,0 +1,23 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+html, body, div, qrcode{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 200px;
+    height: 230px;
+}
+
+qrcode {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 7px 3px 7px 7px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
