@@ -1,7 +1,7 @@
 {
     "name": "Sweet二维码生成器",
     "description": "快速生成你想要的二维码",
-    "version": "5",
+    "version": "6",
     "manifest_version": 2,
     "browser_action": {
         "default_icon": {
