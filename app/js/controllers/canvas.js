@@ -6,7 +6,7 @@ myApp.controller('Canvas', ['$scope', '$location', function($scope, $location) {
     if( typeof search == "object" && "text" in search ){
         console.log(search.text);
         $scope.string = decodeURIComponent(search.text);
-    } else {
+    } else if ( typeof chrome != "undefined" && "tabs" in chrome ) {
         chrome.tabs.query({
             highlighted: true,
             windowType: "normal"
@@ -16,6 +16,8 @@ myApp.controller('Canvas', ['$scope', '$location', function($scope, $location) {
                 $scope.$apply();
             }
         })
+    } else {
+        $scope.string = "http://mujiang.info/";
     }
     $scope.version = 1;
 
