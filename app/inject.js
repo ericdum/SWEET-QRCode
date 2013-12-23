@@ -8,7 +8,8 @@ qrcode.style.left = "50%";
 qrcode.style.top = "0";
 qrcode.style.marginleft = "-100px";
 qrcode.style.width = "200px";
-qrcode.style.height = "230px";
+qrcode.style.height = "233px";
+qrcode.style.overflow="hidden";
 qrcode.style.zIndex = 10001;
 qrcode.style.background = "white";
 
@@ -27,3 +28,7 @@ mask.onclick = function(){
 };
 document.body.appendChild(mask);
 document.body.appendChild(qrcode);
+
+
+
+
