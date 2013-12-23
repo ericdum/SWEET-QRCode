@@ -5,7 +5,12 @@ myApp.controller('Canvas', ['$scope', '$location', function($scope, $location) {
     var search = $location.search();
     if( typeof search == "object" && "text" in search ){
         console.log(search.text);
-        $scope.string = decodeURIComponent(search.text);
+        try {
+            $scope.string = decodeURIComponent(search.text);
+        } catch(e) {
+            console.log(e);
+            $scope.string = search.text;
+        }
     } else if ( typeof chrome != "undefined" && "tabs" in chrome ) {
         chrome.tabs.query({
             highlighted: true,
