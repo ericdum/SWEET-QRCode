@@ -10,8 +10,9 @@ qrcode.style.marginleft = "-100px";
 qrcode.style.width = "200px";
 qrcode.style.height = "233px";
 qrcode.style.overflow="hidden";
-qrcode.style.zIndex = 10001;
+qrcode.style.zIndex = 1000001;
 qrcode.style.background = "white";
+qrcode.scrolling="no";
 
 mask.style.width = "100%";
 mask.style.height = "100%";
@@ -20,7 +21,7 @@ mask.style.top = "0";
 mask.style.left = "0";
 mask.style.background = "black";
 mask.style.opacity = ".3";
-mask.style.zIndex = "10000";
+mask.style.zIndex = "1000000";
 mask.style.cursor = "pointer";
 mask.onclick = function(){
     mask.remove();
