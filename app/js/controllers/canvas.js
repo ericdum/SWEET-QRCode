@@ -13,8 +13,8 @@ myApp.controller('Canvas', ['$scope', '$location', function($scope, $location) {
         }
     } else if ( typeof chrome != "undefined" && "tabs" in chrome ) {
         chrome.tabs.query({
-            highlighted: true,
-            windowType: "normal"
+            active: true,
+            lastFocusedWindow:true
         }, function(tab){
             if( 0 in tab && "url" in tab[0] ){
                 $scope.string = tab[0].url;
